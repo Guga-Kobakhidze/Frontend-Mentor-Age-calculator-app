@@ -11,11 +11,11 @@
     />
   </head>
   <body>
-    <header></header>
-    <main id="main">
+    <header role="banner"></header>
+    <main id="main" role="main">
       <section class="age_calc">
         <form class="calc_form">
-          <div class="numbers">
+          <nav class="numbers" role="navigation">
             <div class="input">
               <label for="day">DAY</label>
               <input type="text" class="day" id="day" placeholder="DD" />
@@ -31,7 +31,7 @@
               <input type="text" class="year" id="year" placeholder="YYYY" />
               <span class="error" id="yearError"></span>
             </div>
-          </div>
+          </nav>
           <button
             aria-label="Calculate Age Icon"
             class="submit_btn"
@@ -48,7 +48,7 @@
         </form>
       </section>
     </main>
-    <footer></footer>
+    <footer role="contentinfo"></footer>
     <script src="assets/main.js"></script>
   </body>
 </html>
