@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main id="main">
+      <section class="age_calc">
+        <form class="calc_form">
+          <div class="numbers">
+            <div class="input">
+              <label for="day">DAY</label>
+              <input type="text" class="day" id="day" placeholder="DD" />
+              <span class="error" id="dayError"></span>
+            </div>
+            <div class="input">
+              <label for="month">MONTH</label>
+              <input type="text" class="month" id="month" placeholder="MM" />
+              <span class="error" id="monthError"></span>
+            </div>
+            <div class="input">
+              <label for="year">YEAR</label>
+              <input type="text" class="year" id="year" placeholder="YYYY" />
+              <span class="error" id="yearError"></span>
+            </div>
+          </div>
+          <button
+            aria-label="Calculate Age Icon"
+            class="submit_btn"
+            type="button"
+            onclick="calculateAge()"
+          >
+            <img src="assets/images/icon-arrow.svg" alt="Calculate Age Icon" />
+          </button>
+          <div class="labels">
+            <h1 class="title title1"><span>--</span>years</h1>
+            <h1 class="title title2"><span>--</span>months</h1>
+            <h1 class="title title3"><span>--</span>days</h1>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
